@@ -9,6 +9,7 @@ class DataIngestionConfig:
     unzip_dir: Path
 
 
+
 @dataclass(frozen=True)
 class DataValidationConfig:
     root_dir: Path
@@ -39,3 +40,13 @@ class ModelTrainerConfig:
     eval_steps: int
     save_steps: float
     gradient_accumulation_steps: int
+
+
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    data_path: Path
+    model_path: Path
+    tokenizer_path: Path
+    metric_file_name: Path

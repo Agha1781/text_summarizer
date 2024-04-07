@@ -1,8 +1,8 @@
 import os
-from src.textSummarizer.logging import logger
+from textSummarizer.logging import logger
 from transformers import AutoTokenizer
 from datasets import load_dataset, load_from_disk
-from src.textSummarizer.entity import DataTransformationConfig
+from textSummarizer.entity import DataTransformationConfig
 
 
 
